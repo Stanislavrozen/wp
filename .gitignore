@@ -1,4 +1,4 @@
 node_modules
 src
-client\\*.txt
+client/*LICENSE.txt
 .vscode

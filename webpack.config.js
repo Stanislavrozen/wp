@@ -8,14 +8,14 @@ module.exports = function(env) {
         mode: "production",
         output: {
             path: path.resolve(__dirname, 'client'),
-            filename: 'bundle.[contenthash].js',
+            filename: 'bundle.js',
             clean: true
         },
         module: {
             rules: [
                 {
                     test: /\.(js|jsx)$/,
-                    exclude: /node_modules/,
+                    exclude: ["/node_modules/", "/server/", "/public/"],
                     use: "babel-loader"
                 },
                 {
