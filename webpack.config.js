@@ -18,21 +18,21 @@ module.exports = function(env) {
                     exclude: ["/node_modules/", "/server/", "/public/"],
                     use: "babel-loader"
                 },
-                {
-                    test: /\.css$/,
-                    use: [
-                        {
-                            loader: "style-loader"
-                        },
-                        {
-                            loader: "css-loader"
-                        }
-                    ]
-                },
-                {
-                    test: /\.(png|svg|jpg|gif)$/,
-                    use: ['file-loader']
-                }
+                // {
+                //     test: /\.css$/,
+                //     use: [
+                //         {
+                //             loader: "style-loader"
+                //         },
+                //         {
+                //             loader: "css-loader"
+                //         }
+                //     ]
+                // },
+                // {
+                //     test: /\.(png|svg|jpg|gif)$/,
+                //     use: ['file-loader']
+                // }
             ]
         },
         resolve: {
